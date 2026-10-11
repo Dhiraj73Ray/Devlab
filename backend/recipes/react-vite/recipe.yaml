@@ -1,0 +1,12 @@
+name: react-vite
+description: React + Vite starter (Fat Template)
+variables:
+  project_name:
+    default: my-app
+files_to_template:
+  - package.json
+hooks:
+  post_create:
+    - git init
+    - git add .
+    - git commit -m "initial commit from devlab"
